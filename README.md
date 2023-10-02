@@ -1,2 +1,2 @@
 # Indigg_Quiz
-Frontend Challenge to create a quiz application
+Frontend Challenge given by INDIGG to create a quiz application
