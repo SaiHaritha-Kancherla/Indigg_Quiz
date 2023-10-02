@@ -1,0 +1,250 @@
+.framePage
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    
+}
+.headerPage
+{
+    flex:1;
+    display:flex;
+    flex-direction:row;
+    background-color: #e8def2;
+    /* border-radius: 2%; */
+    float:center;
+    justify-content: space-between; 
+    width:100%;
+    height:10%;               
+    border: 2px solid black;
+    gap:35%;
+    
+    
+}
+.bodyPage
+{
+    background-color: #e8def2;
+    flex:6;
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap:10%;
+    flex-direction: column;
+    /* background-image: url("bg.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: 100% 100%; */
+
+}
+
+.questionCard,.introCard,.scoreCard
+{
+    background-color: white;               
+    border: 1px solid black;
+    width:70%;
+    height: 100%;
+    display:flex;
+    flex: 3;
+    margin: 5%;
+    border-radius: 2%;
+    gap:5%;
+    border: 1px solid;
+    padding: 5%;
+    box-shadow: 15px 10px 2px 1px #9680ac;
+    flex-direction:column;
+
+}
+#scoreCard
+{
+    gap:15%;
+}
+
+#question{
+    border: 1px solid black;
+    flex:2;
+    height: 100%;
+    width: 100%;
+    background-color: #e8def2;
+    padding: 1%;
+    text-align: center;
+    font-weight: 900;
+}
+#op1,#op2,#op3,#op4
+{
+    background-color: #e8def2;
+    border: none;
+    text-align: center;
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+    font-weight: 200;
+    
+}
+#op1:hover,#op2:hover,#op3:hover,#op4:hover
+{
+    transform: scale(1.10);
+    background-color: #7a10e4;
+}
+.options
+{
+    display :flex;
+    flex-direction:column;                
+    flex:1;
+    gap:10%;
+}
+
+
+.row1,.row2,.nameInput
+{
+    flex:2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:10%;
+    .option
+    {
+        flex: 2;
+        border: 1px solid black;
+        flex: 1;
+        background-color: #e8def2;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-weight: 200;
+    }
+}
+.introCard
+{
+    justify-content: center;
+    align-items: center;
+   /* gap:90%; */
+}
+.nameInput
+{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* gap:3%; */
+}
+.navButtons
+{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    gap:50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.next,.restart
+{
+    background-color: #cfb0ee;
+    border: 1px solid #9680ac;
+    border-radius: 3%;
+    width: 40%;
+    height: 100%;
+    padding: 1%;
+    margin-bottom: 2%;
+    font-weight: 900;
+
+    
+}
+#startTest
+{
+    background-color: #cfb0ee;
+    border: 1px solid #9680ac;
+    width:max-content;
+    height: max-content;   
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
+    border-radius: 10%;
+}
+#warning
+{
+    color: red;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+.logoImg
+{
+    flex: 1;
+}
+#score
+{
+    border-radius: 50%;
+    background-color: #cfb0ee;
+    border: 5px solid #9680ac;
+    width: max-content;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+    font-size: xxx-large;
+}
+.scoreCard
+{
+    justify-content: center;
+    align-items: center;
+}
+#queTimer
+{
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    width:max-content;
+    height: max-content;
+    padding:5%;
+    font-weight: 900;
+    margin-left: 40%;
+    background-color: #cfb0ee;
+    /* align-items: end; */
+}
+#title
+{
+    flex:8;
+    float:center;
+    justify-content:space-around;
+    align-items:center;
+    color:#000000;
+    font-size: 30px;
+}
+#shortNote
+{
+    align-items: center;
+    font-weight: 200;
+    justify-content: center;
+}
+#notes
+{
+    align-items: center;
+    font-weight: 200;
+    justify-content: center;
+
+}
+label
+{
+    align-items: center;
+    justify-content:space-around;
+    font-weight:  200;
+    font-size: larger;
+}
+input{
+    width:100%;
+    border:1px solid #9680ac;
+    border-radius: 1%;
+    height:max-content;
+}

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="framePage">
+            <div class="headerPage">
+                <div class="logoImg"><img  style="float: left;" src="logo.png" width="100%" height="100%" alt="logo INDIGG"/></div>                
+                <h1 id="title">INDIGG QUIZ</h1>
+            </div>
+            
+            <div class="bodyPage" id="bodyPage">
+                
+                <div class="introCard" id="introCard">
+                    <div id="shortNote" > Here is a short quiz about INDIGG.</div>
+                    <div id="notes" > This quiz contains 5 questions.Each question has time limit of 10 seconds</div>
+                        <div class="nameInput">
+                            <label> Name</label>
+                            <input type="text"  id="userName" />
+                            
+                        </div>
+                        <span id="warning"></span>
+                            <button id="startTest" onclick="startQuiz()">START QUIZ</button>
+                        
+                </div>
+                <div class="questionCard" id="questionCard" >
+                        <div id="queTimer">00 : 10</div>
+                        <div id="question"> que here</div>
+                        <div class="options">
+                           
+                            <div class="row1">
+                                <div  class="option" >
+                                   <button id="op1" onclick="checkAns(1)">Option 1</button>
+                                   
+                                </div>
+                                <div class="option" >
+                                    <button id="op2" onclick="checkAns(2)">Option 2</button>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div class="option" >
+                                    <button id="op3" onclick="checkAns(3)">Option 3</button>
+                                </div>
+                                <div class="option" >
+                                    <button id="op4" onclick="checkAns(4)">Option 4</button>
+                                </div>
+
+                            </div>
+                           
+                            
+                        </div>
+                       
+                        
+                </div>
+                
+                <div class="scoreCard" id="scoreCard">
+                    <h3>Thank you for completing the quiz!  Please Close the window</h3>
+                    
+                    <div id="score"></div>
+                    <button class="restart" id="restart" onclick="restart()">RETAKE TEST</button>
+                </div>
+            </div>
+            
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
